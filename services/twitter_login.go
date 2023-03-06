@@ -1,6 +1,7 @@
 package services
 
 import (
+	"fmt"
 	"github.com/tebeka/selenium"
 	"github.com/tebeka/selenium/chrome"
 	"time"
@@ -38,15 +39,13 @@ func buttonFindAndClick(driver selenium.WebDriver, fieldFinder FieldFinder) {
 	CheckError("Error going to the "+fieldFinder.Name, err)
 }
 
-func TwitterLogin() {
+func TwitterLogin(userName, password string) {
 
 	//INITIALISING VARIABLES
 	var (
-		service  *selenium.Service      //SERVICE
-		driver   selenium.WebDriver     //DRIVER
-		err      error                  //ERROR
-		userName = "SimformGolang"      //TWITTER USERNAME
-		password = "Golang@Simform@123" //TWITTER PASSWORD
+		service *selenium.Service  //SERVICE
+		driver  selenium.WebDriver //DRIVER
+		err     error              //ERROR
 	)
 
 	//STARTING CHROME DRIVER SERVICE
@@ -55,8 +54,12 @@ func TwitterLogin() {
 
 	//CLOSING CHROME DRIVER SERVICE
 	defer func() {
-		err = service.Stop()
-		CheckError("Error Closing Chrome Driver Service", err)
+		if r := recover(); r != nil {
+			fmt.Println("Error: ", r)
+			fmt.Println("Closing Driver and exiting program.")
+			err = service.Stop()
+			CheckError("Error Closing Chrome Driver Service", err)
+		}
 	}()
 
 	//DEFINING DRIVER CAPABILITIES
