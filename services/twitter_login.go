@@ -4,8 +4,11 @@ import (
 	"fmt"
 	"github.com/tebeka/selenium"
 	"github.com/tebeka/selenium/chrome"
+	"os"
 	"time"
 )
+
+var service *selenium.Service //SERVICE
 
 type FieldFinder struct {
 	Name          string //NAME OF THE FIELD
@@ -32,21 +35,20 @@ func textBoxFindAndInsert(driver selenium.WebDriver, fieldFinder FieldFinder) {
 }
 
 func buttonFindAndClick(driver selenium.WebDriver, fieldFinder FieldFinder) {
+
+	//FINDING BUTTON
 	button, err := driver.FindElement(fieldFinder.SelectorType, fieldFinder.SelectorQuery)
 	CheckError("Error Finding "+fieldFinder.Name+" Button", err)
 
+	//CLICK EVENT ON BUTTON
 	err = button.Click()
 	CheckError("Error going to the "+fieldFinder.Name, err)
 }
 
-func TwitterLogin(userName, password string) {
+func TwitterLogin(userName, password string) (driver selenium.WebDriver) {
 
 	//INITIALISING VARIABLES
-	var (
-		service *selenium.Service  //SERVICE
-		driver  selenium.WebDriver //DRIVER
-		err     error              //ERROR
-	)
+	var err error //ERROR
 
 	//STARTING CHROME DRIVER SERVICE
 	service, err = selenium.NewChromeDriverService("./chromedriver", 4444)
@@ -57,8 +59,8 @@ func TwitterLogin(userName, password string) {
 		if r := recover(); r != nil {
 			fmt.Println("Error: ", r)
 			fmt.Println("Closing Driver and exiting program.")
-			err = service.Stop()
-			CheckError("Error Closing Chrome Driver Service", err)
+			CloseService(driver)
+			os.Exit(0)
 		}
 	}()
 
@@ -74,10 +76,10 @@ func TwitterLogin(userName, password string) {
 
 	//CREATING NEW DRIVER
 	driver, err = selenium.NewRemote(caps, "")
-	CheckError("'Error Creating Remote Service", err)
+	CheckError("Error Creating Remote Service", err)
 
 	//REQUESTING TWITTER LOGIN PAGE
-	err = driver.Get("https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D")
+	err = driver.Get("https://twitter.com/i/flow/login")
 	CheckError("Error Redirecting To The Login URL", err)
 
 	//WAITING FOR THE PAGE LOAD
@@ -115,4 +117,19 @@ func TwitterLogin(userName, password string) {
 		SelectorQuery: "div[role=button]",
 		SelectorType:  selenium.ByCSSSelector,
 	})
+	return
+}
+
+// CLOSING CHROME SERVICE AND DRIVER
+func CloseService(driver selenium.WebDriver) {
+	defer func() {
+		if r := recover(); r != nil {
+			fmt.Println("Something Went Wrong exiting chrome service and driver exiting program.")
+			os.Exit(0)
+		}
+	}()
+	err := driver.Close()
+	CheckError("Error Closing Driver", err)
+	err = service.Stop()
+	CheckError("Error Closing Chrome Driver Service", err)
 }
