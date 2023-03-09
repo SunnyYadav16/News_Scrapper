@@ -10,7 +10,11 @@ import (
 )
 
 func main() {
-	var driver selenium.WebDriver
+	var (
+		jsonResult []byte
+		err        error
+		driver     selenium.WebDriver
+	)
 	defer func() {
 		if r := recover(); r != nil {
 			fmt.Println("Error: ", r)
@@ -24,13 +28,14 @@ func main() {
 	driver = services.TwitterLogin("SimformGolang", "Golang@Simform@123")
 
 	//SLEEP TIMEOUT FOR PAGE LOADING AND AVOIDING CAPTCHA
-	driver.Wait(conditions.URLContains("https://twitter.com"))
+	err = driver.Wait(conditions.URLContains("https://twitter.com"))
+	services.CheckError("Error Loading Twitter Page", err)
 
 	//SCRAPPING NEWS HANDLE
 	scrappedNews := services.NewsScrapper(driver, "indiatoday")
 
 	//CONVERTING SCRAPED NEWS TO JSON FORMAT FOR TESTING AND VISIBILITY
-	jsonResult, err := json.MarshalIndent(scrappedNews, " ", "\t")
+	jsonResult, err = json.MarshalIndent(scrappedNews, " ", "\t")
 	services.CheckError("Cannot Convert to Json Format", err)
 
 	//DISPLAYING SCRAPPED DATA

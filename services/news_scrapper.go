@@ -47,7 +47,8 @@ func NewsScrapper(driver selenium.WebDriver, channelName string) (newsScrapped [
 	CheckError("Error Getting News Handle", err)
 
 	//LOAD WAIT
-	driver.Wait(conditions.ElementIsLocated(selenium.ByCSSSelector, "article[role=article]"))
+	err = driver.Wait(conditions.ElementIsLocated(selenium.ByCSSSelector, "article[role=article]"))
+	CheckError("Error Waiting For Article Elements To Load", err)
 
 	//FIND NEWS TWEETS ARTICLES
 	articles, err = driver.FindElements(selenium.ByCSSSelector, "article[role=article]")
