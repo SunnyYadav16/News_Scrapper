@@ -2,10 +2,10 @@ package services
 
 import (
 	"fmt"
+	conditions "github.com/serge1peshcoff/selenium-go-conditions"
 	"github.com/tebeka/selenium"
 	"github.com/tebeka/selenium/chrome"
 	"os"
-	"time"
 )
 
 var service *selenium.Service //SERVICE
@@ -83,7 +83,8 @@ func TwitterLogin(userName, password string) (driver selenium.WebDriver) {
 	CheckError("Error Redirecting To The Login URL", err)
 
 	//WAITING FOR THE PAGE LOAD
-	time.Sleep(5 * time.Second)
+	err = driver.Wait(conditions.ElementIsLocated(selenium.ByCSSSelector, "input[type=text]"))
+	CheckError("Error Loading Twitter Login Page Unable To Load UserName Text-Box", err)
 
 	//Find And Insert UserName
 	textBoxFindAndInsert(driver, FieldFinder{
@@ -101,7 +102,8 @@ func TwitterLogin(userName, password string) (driver selenium.WebDriver) {
 	})
 
 	//LOADING PAGE WAIT TIME
-	time.Sleep(1 * time.Second)
+	err = driver.Wait(conditions.ElementIsLocated(selenium.ByCSSSelector, "input[type=password]"))
+	CheckError("Error Loading Twitter Login Page Unable To Load Password Text-Box", err)
 
 	//FIND AND INSERT PASSWORD
 	textBoxFindAndInsert(driver, FieldFinder{
@@ -120,7 +122,7 @@ func TwitterLogin(userName, password string) (driver selenium.WebDriver) {
 	return
 }
 
-// CLOSING CHROME SERVICE AND DRIVER
+// CloseService : CLOSING CHROME SERVICE AND DRIVER
 func CloseService(driver selenium.WebDriver) {
 	defer func() {
 		if r := recover(); r != nil {
