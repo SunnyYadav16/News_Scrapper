@@ -165,7 +165,7 @@ func scrapNews(scrappedNews *models.NewsHandler, article selenium.WebElement) {
 			CheckError("Error Getting Image Link", err)
 
 			//INSERTING LINK IF IT IS NOT A PROFILE PICTURE
-			if !strings.Contains(tweetImageLink, "normal.jpg") && !strings.Contains(tweetImageLink, "normal.png") && !strings.Contains(tweetImageLink, "normal.jpeg") {
+			if !strings.Contains(tweetImageLink, "profile_images") {
 				scrappedNews.Media = append(scrappedNews.Media, models.Media{Type: "Image", URL: tweetImageLink})
 			}
 		}
