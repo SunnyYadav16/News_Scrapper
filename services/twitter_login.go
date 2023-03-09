@@ -86,6 +86,7 @@ func TwitterLogin(userName, password string) (driver selenium.WebDriver) {
 	err = driver.Wait(conditions.ElementIsLocated(selenium.ByCSSSelector, "input[type=text]"))
 	CheckError("Error Loading Twitter Login Page Unable To Load UserName Text-Box", err)
 
+
 	//Find And Insert UserName
 	textBoxFindAndInsert(driver, FieldFinder{
 		Name:          "Username",
