@@ -1,0 +1,87 @@
+[
+	{
+		"ChannelName": "IndiaToday",
+		"TweetId": "1634121563267104768",
+		"TweetContent": "6-year-old child from Virginia who shot his teacher won't go to jail for this reason...\n\n#NewsMo #USA #SchoolShooting #GunLaws #Virginia #Child #US",
+		"HashTags": [
+			"#NewsMo",
+			"#USA",
+			"#SchoolShooting",
+			"#GunLaws",
+			"#Virginia",
+			"#Child",
+			"#US"
+		],
+		"UserHandle": null,
+		"Timestamp": "2023-03-10T09:18:35Z",
+		"Media": [
+			{
+				"Type": "Video",
+				"URL": "blob:https://twitter.com/e11ca8b8-0a9e-4b4d-9a42-c1adae2df948"
+			}
+		]
+	},
+	{
+		"ChannelName": "IndiaToday",
+		"TweetId": "1634120205780795392",
+		"TweetContent": "K Kavitha met Vijay Nair. Funds were transferred from Hyderabad to Delhi: ED\n(\n@AneeshaMathur\n) \n#News #ManishSisodia \n@nabilajamal_",
+		"HashTags": [
+			"#News",
+			"#ManishSisodia"
+		],
+		"UserHandle": [
+			"@AneeshaMathur",
+			"@nabilajamal_"
+		],
+		"Timestamp": "2023-03-10T09:13:12Z",
+		"Media": [
+			{
+				"Type": "Video",
+				"URL": "blob:https://twitter.com/83398b46-982b-43e8-9a7b-e151593a4879"
+			}
+		]
+	},
+	{
+		"ChannelName": "IndiaToday",
+		"TweetId": "1634120033420050434",
+		"TweetContent": "#ManishSisodia had direct role in Delhi liquor scam: ED tells court\n\nBy \n@SrishtiOjha11\n and \n@sardakanu_law",
+		"HashTags": [
+			"#ManishSisodia"
+		],
+		"UserHandle": [
+			"@SrishtiOjha11",
+			"@sardakanu_law"
+		],
+		"Timestamp": "2023-03-10T09:12:31Z",
+		"Media": [
+			{
+				"Type": "Image",
+				"URL": "https://pbs.twimg.com/card_img/1634119828045807616/ff4Nx20v?format=jpg\u0026name=small"
+			},
+			{
+				"Type": "Image attached article Link",
+				"URL": "https://t.co/VVOuGSYCwW"
+			}
+		]
+	},
+	{
+		"ChannelName": "IndiaToday",
+		"TweetId": "1634119469936132096",
+		"TweetContent": "ED said the Delhi liquor policy was framed to benefit certain individuals. \n@AneeshaMathur\n with more details.\n#News #ManishSisodia \n@nabilajamal_",
+		"HashTags": [
+			"#News",
+			"#ManishSisodia"
+		],
+		"UserHandle": [
+			"@AneeshaMathur",
+			"@nabilajamal_"
+		],
+		"Timestamp": "2023-03-10T09:10:16Z",
+		"Media": [
+			{
+				"Type": "Video",
+				"URL": "blob:https://twitter.com/878885ec-5362-47d0-8fed-22093ae62458"
+			}
+		]
+	}
+]

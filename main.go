@@ -21,4 +21,6 @@ func main() {
 	url, err := driver.CurrentURL()
 	services.CheckError("Error Getting Current URL", err)
 	fmt.Println(url)
+	services.TwitterLandingPage(driver)
+	services.NewsScrapper(driver)
 }
