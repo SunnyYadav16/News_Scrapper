@@ -191,29 +191,47 @@ func scrapNews(scrappedNews *models.NewsHandler, article selenium.WebElement) {
 }
 
 func tagsHandlesAndLinksFinder(tweetContent string, scrappedNews *models.NewsHandler) {
-	var media models.Media
 
 	//SPLITTING TWEETS TO FIND
 	splitter := func(characters rune) bool {
 		return characters == ' ' || characters == '\t' || characters == '\n'
 	}
+
+	//SPLITTING WORDS
+	finalFunc := func(characters rune) bool {
+		return characters == ')' || characters == ',' || characters == '.' || characters == '!' || characters == '?' || characters == ':' || characters == ';' || characters == '`' || characters == '"'
+	}
+
 	words := strings.FieldsFunc(tweetContent, splitter)
 
 	//TOTAL LENGTH OF WORDS OBTAINED
 	length := len(words)
 	for i := 0; i < length; i++ {
+		var (
+			media      models.Media
+			hashTag    models.HashTag
+			userHandle models.UserHandle
+		)
+		hashTag.NewsHandlers = append(hashTag.NewsHandlers, scrappedNews)
+		userHandle.NewsHandlers = append(hashTag.NewsHandlers, scrappedNews)
 		word := words[i]
 		word = strings.TrimSpace(word)
 		if word[:1] == "#" { //IF IT IS A MENTION
-			scrappedNews.HashTags = append(scrappedNews.HashTags, word)
+			hashTag.TagName = word
+			scrappedNews.HashTags = append(scrappedNews.HashTags, &hashTag)
 		} else if word[:1] == "@" { //IF IT IS A USER-HANDLE
-			scrappedNews.UserHandle = append(scrappedNews.UserHandle, word)
+			userHandle.Name = word
+			scrappedNews.UserHandles = append(scrappedNews.UserHandles, &userHandle)
 		} else if strings.Contains(word, "#") { //IF A WORD CONTAINS A MENTION E.G. THE#aajtak
 			str := strings.Split(word, "#")
-			scrappedNews.HashTags = append(scrappedNews.HashTags, "#"+str[1])
+			final := strings.FieldsFunc(str[1], finalFunc)
+			hashTag.TagName = "#" + final[0]
+			scrappedNews.HashTags = append(scrappedNews.HashTags, &hashTag)
 		} else if strings.Contains(word, "@") { //IF A WORD CONTAINS A USER-HANDEL of@user
 			str := strings.Split(word, "@")
-			scrappedNews.UserHandle = append(scrappedNews.UserHandle, "@"+str[1])
+			final := strings.FieldsFunc(str[1], finalFunc)
+			userHandle.Name = "@" + final[0]
+			scrappedNews.UserHandles = append(scrappedNews.UserHandles, &userHandle)
 		} else if strings.Contains(word, "http") || strings.Contains(word, "https") { //IF IT IS A LINK
 			media.Type = "Link"
 			media.URL = word
