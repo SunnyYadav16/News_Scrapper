@@ -1,0 +1,200 @@
+[
+	{
+		"ID": 0,
+		"CreatedAt": "0001-01-01T00:00:00Z",
+		"UpdatedAt": "0001-01-01T00:00:00Z",
+		"DeletedAt": null,
+		"TweetId": "1634082416594673667",
+		"ChannelName": "@ndtvfeed",
+		"TweetContent": "Giving The Finger Is A 'God-Given' Right, Says A Judge In This Country https://ndtv.com/world-news/giving-the-finger-is-a-god-given-right-says-a-judge-in-this-country-3848782…",
+		"Media": [
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "",
+				"Type": "link",
+				"URL": "https://ndtv.com/world-news/giving-the-finger-is-a-god-given-right-says-a-judge-in-this-country-3848782…"
+			}
+		],
+		"HashTags": null,
+		"UserHandle": null,
+		"Timestamp": "2023-03-10T06:43:02Z"
+	},
+	{
+		"ID": 0,
+		"CreatedAt": "0001-01-01T00:00:00Z",
+		"UpdatedAt": "0001-01-01T00:00:00Z",
+		"DeletedAt": null,
+		"TweetId": "1634081987030839297",
+		"ChannelName": "@Gadgets360",
+		"TweetContent": "Moto G73 5G launched in India. Here's all you need to know: https://gadgets360.com/mobiles/news/moto-g73-5g-price-in-india-rs-18999-launch-sale-date-march-16-specifications-features-3848751…",
+		"Media": [
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "",
+				"Type": "link",
+				"URL": "https://gadgets360.com/mobiles/news/moto-g73-5g-price-in-india-rs-18999-launch-sale-date-march-16-specifications-features-3848751…"
+			}
+		],
+		"HashTags": null,
+		"UserHandle": null,
+		"Timestamp": "2023-03-10T06:41:20Z"
+	},
+	{
+		"ID": 0,
+		"CreatedAt": "0001-01-01T00:00:00Z",
+		"UpdatedAt": "0001-01-01T00:00:00Z",
+		"DeletedAt": null,
+		"TweetId": "1634081604862636035",
+		"ChannelName": "@NDTVFood",
+		"TweetContent": "Iconic Campa Cola Brand To Be Relaunched By Reliance - All You Need To Know\nhttps://food.ndtv.com/news/iconic-campa-cola-brand-to-be-relaunched-by-reliance-all-you-need-to-know-3848686…\n#CampaCola #reliance",
+		"Media": [
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "",
+				"Type": "link",
+				"URL": "https://food.ndtv.com/news/iconic-campa-cola-brand-to-be-relaunched-by-reliance-all-you-need-to-know-3848686…"
+			},
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "",
+				"Type": "link",
+				"URL": "https://t.co/vQnPjHSimP"
+			}
+		],
+		"HashTags": [
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "1634081604862636035",
+				"Hashtags": "CampaCola"
+			},
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "1634081604862636035",
+				"Hashtags": "reliance"
+			}
+		],
+		"UserHandle": null,
+		"Timestamp": "2023-03-10T06:39:49Z"
+	},
+	{
+		"ID": 0,
+		"CreatedAt": "0001-01-01T00:00:00Z",
+		"UpdatedAt": "0001-01-01T00:00:00Z",
+		"DeletedAt": null,
+		"TweetId": "1634082910046408704",
+		"ChannelName": "@bqprime",
+		"TweetContent": "#LiHongzhong has built a reputation as the Chinese official most eager to heap praise on leader #XiJinping. \n\nNow he has a new distinction: the only nominee to receive a “no” vote this year for a leadership role in the country’s legislature. #China",
+		"Media": [
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "",
+				"Type": "link",
+				"URL": "https://t.co/CNe30bFIPd"
+			}
+		],
+		"HashTags": [
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "1634082910046408704",
+				"Hashtags": "LiHongzhong"
+			},
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "1634082910046408704",
+				"Hashtags": "XiJinping."
+			},
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "1634082910046408704",
+				"Hashtags": "China"
+			}
+		],
+		"UserHandle": null,
+		"Timestamp": "2023-03-10T06:45:00Z"
+	},
+	{
+		"ID": 0,
+		"CreatedAt": "0001-01-01T00:00:00Z",
+		"UpdatedAt": "0001-01-01T00:00:00Z",
+		"DeletedAt": null,
+		"TweetId": "1634082640969039872",
+		"ChannelName": "@ndtv",
+		"TweetContent": "\"Those guilty of lapses will be held accountable\": Kerala Minister on toxic air in Kochi after garbage fire",
+		"Media": [
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "",
+				"Type": "image",
+				"URL": "https://pbs.twimg.com/amplify_video_thumb/1634082005846564867/img/mQpdvE06sOAp4UFM.jpg"
+			},
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "",
+				"Type": "video",
+				"URL": "blob:https://twitter.com/1908416d-13ea-4357-b1f1-46ea2f300263"
+			}
+		],
+		"HashTags": null,
+		"UserHandle": null,
+		"Timestamp": "2023-03-10T06:43:56Z"
+	},
+	{
+		"ID": 0,
+		"CreatedAt": "0001-01-01T00:00:00Z",
+		"UpdatedAt": "0001-01-01T00:00:00Z",
+		"DeletedAt": null,
+		"TweetId": "1634081161491226624",
+		"ChannelName": "@ndtvfeed",
+		"TweetContent": "Expansion In Membership Of UN Security Council Absolutely Essential: India https://ndtv.com/world-news/expansion-in-membership-of-un-security-council-absolutely-essential-india-3848767…",
+		"Media": [
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "",
+				"Type": "link",
+				"URL": "https://ndtv.com/world-news/expansion-in-membership-of-un-security-council-absolutely-essential-india-3848767…"
+			}
+		],
+		"HashTags": null,
+		"UserHandle": null,
+		"Timestamp": "2023-03-10T06:38:03Z"
+	}
+]
