@@ -163,13 +163,11 @@ func NewsScrapperNDTV(driver selenium.WebDriver, channelName string) (newsScrapp
 
 func ConvertToJSON(dataset []models.NewsHandler) {
 	jsonData, err := json.MarshalIndent(dataset, "", "\t")
-
 	CheckError("err:", err)
-	fmt.Println(string(jsonData))
-
 	err = ioutil.WriteFile("twitterData1.json", jsonData, os.ModePerm)
 	CheckError("error occured while writing into file:", err)
-	time2.Sleep(20 * time2.Second)
+	time2.Sleep(10 * time2.Second)
+	fmt.Println("Successfully inserted into database")
 }
 
 func splitCondition(r rune) bool {

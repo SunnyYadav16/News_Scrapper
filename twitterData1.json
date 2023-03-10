@@ -4,9 +4,9 @@
 		"CreatedAt": "0001-01-01T00:00:00Z",
 		"UpdatedAt": "0001-01-01T00:00:00Z",
 		"DeletedAt": null,
-		"TweetId": "1634082416594673667",
-		"ChannelName": "@ndtvfeed",
-		"TweetContent": "Giving The Finger Is A 'God-Given' Right, Says A Judge In This Country https://ndtv.com/world-news/giving-the-finger-is-a-god-given-right-says-a-judge-in-this-country-3848782…",
+		"TweetId": "1634093087726206978",
+		"ChannelName": "@CricketNDTV",
+		"TweetContent": "#UsmanKhawaja and #CameronGreen frustrated the Indian team in the 4th Test at Ahmedabad, both registering individual centuries.\n#INDvAUS",
 		"Media": [
 			{
 				"ID": 0,
@@ -15,53 +15,7 @@
 				"DeletedAt": null,
 				"TweetId": "",
 				"Type": "link",
-				"URL": "https://ndtv.com/world-news/giving-the-finger-is-a-god-given-right-says-a-judge-in-this-country-3848782…"
-			}
-		],
-		"HashTags": null,
-		"UserHandle": null,
-		"Timestamp": "2023-03-10T06:43:02Z"
-	},
-	{
-		"ID": 0,
-		"CreatedAt": "0001-01-01T00:00:00Z",
-		"UpdatedAt": "0001-01-01T00:00:00Z",
-		"DeletedAt": null,
-		"TweetId": "1634081987030839297",
-		"ChannelName": "@Gadgets360",
-		"TweetContent": "Moto G73 5G launched in India. Here's all you need to know: https://gadgets360.com/mobiles/news/moto-g73-5g-price-in-india-rs-18999-launch-sale-date-march-16-specifications-features-3848751…",
-		"Media": [
-			{
-				"ID": 0,
-				"CreatedAt": "0001-01-01T00:00:00Z",
-				"UpdatedAt": "0001-01-01T00:00:00Z",
-				"DeletedAt": null,
-				"TweetId": "",
-				"Type": "link",
-				"URL": "https://gadgets360.com/mobiles/news/moto-g73-5g-price-in-india-rs-18999-launch-sale-date-march-16-specifications-features-3848751…"
-			}
-		],
-		"HashTags": null,
-		"UserHandle": null,
-		"Timestamp": "2023-03-10T06:41:20Z"
-	},
-	{
-		"ID": 0,
-		"CreatedAt": "0001-01-01T00:00:00Z",
-		"UpdatedAt": "0001-01-01T00:00:00Z",
-		"DeletedAt": null,
-		"TweetId": "1634081604862636035",
-		"ChannelName": "@NDTVFood",
-		"TweetContent": "Iconic Campa Cola Brand To Be Relaunched By Reliance - All You Need To Know\nhttps://food.ndtv.com/news/iconic-campa-cola-brand-to-be-relaunched-by-reliance-all-you-need-to-know-3848686…\n#CampaCola #reliance",
-		"Media": [
-			{
-				"ID": 0,
-				"CreatedAt": "0001-01-01T00:00:00Z",
-				"UpdatedAt": "0001-01-01T00:00:00Z",
-				"DeletedAt": null,
-				"TweetId": "",
-				"Type": "link",
-				"URL": "https://food.ndtv.com/news/iconic-campa-cola-brand-to-be-relaunched-by-reliance-all-you-need-to-know-3848686…"
+				"URL": "https://t.co/FC5lyeWMOE"
 			},
 			{
 				"ID": 0,
@@ -69,8 +23,8 @@
 				"UpdatedAt": "0001-01-01T00:00:00Z",
 				"DeletedAt": null,
 				"TweetId": "",
-				"Type": "link",
-				"URL": "https://t.co/vQnPjHSimP"
+				"Type": "image",
+				"URL": "https://pbs.twimg.com/card_img/1634093093417779201/RzHJu_jb?format=jpg\u0026name=small"
 			}
 		],
 		"HashTags": [
@@ -79,29 +33,69 @@
 				"CreatedAt": "0001-01-01T00:00:00Z",
 				"UpdatedAt": "0001-01-01T00:00:00Z",
 				"DeletedAt": null,
-				"TweetId": "1634081604862636035",
-				"Hashtags": "CampaCola"
+				"TweetId": "1634093087726206978",
+				"Hashtags": "#UsmanKhawaja"
 			},
 			{
 				"ID": 0,
 				"CreatedAt": "0001-01-01T00:00:00Z",
 				"UpdatedAt": "0001-01-01T00:00:00Z",
 				"DeletedAt": null,
-				"TweetId": "1634081604862636035",
-				"Hashtags": "reliance"
+				"TweetId": "1634093087726206978",
+				"Hashtags": "#CameronGreen"
+			},
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "1634093087726206978",
+				"Hashtags": "#INDvAUS"
 			}
 		],
 		"UserHandle": null,
-		"Timestamp": "2023-03-10T06:39:49Z"
+		"Timestamp": "2023-03-10T07:25:26Z"
 	},
 	{
 		"ID": 0,
 		"CreatedAt": "0001-01-01T00:00:00Z",
 		"UpdatedAt": "0001-01-01T00:00:00Z",
 		"DeletedAt": null,
-		"TweetId": "1634082910046408704",
+		"TweetId": "1634088726027436034",
+		"ChannelName": "@NDTVProfit",
+		"TweetContent": "Boeing To Set Up Flight Conversion Facility In India https://ndtv.com/business/boeing-to-set-up-flight-conversion-facility-in-india-3848632…",
+		"Media": [
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "",
+				"Type": "link",
+				"URL": "https://ndtv.com/business/boeing-to-set-up-flight-conversion-facility-in-india-3848632…"
+			},
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "",
+				"Type": "image",
+				"URL": "https://pbs.twimg.com/media/Fq1zCXXXsAAi6sV?format=jpg\u0026name=small"
+			}
+		],
+		"HashTags": null,
+		"UserHandle": null,
+		"Timestamp": "2023-03-10T07:08:06Z"
+	},
+	{
+		"ID": 0,
+		"CreatedAt": "0001-01-01T00:00:00Z",
+		"UpdatedAt": "0001-01-01T00:00:00Z",
+		"DeletedAt": null,
+		"TweetId": "1634088685384740865",
 		"ChannelName": "@bqprime",
-		"TweetContent": "#LiHongzhong has built a reputation as the Chinese official most eager to heap praise on leader #XiJinping. \n\nNow he has a new distinction: the only nominee to receive a “no” vote this year for a leadership role in the country’s legislature. #China",
+		"TweetContent": "Shares of #BhartiAirtel gain as \n@Jefferies\n upgrades the stock to 'buy' and raises the price target. #BQStocks",
 		"Media": [
 			{
 				"ID": 0,
@@ -110,7 +104,16 @@
 				"DeletedAt": null,
 				"TweetId": "",
 				"Type": "link",
-				"URL": "https://t.co/CNe30bFIPd"
+				"URL": "https://t.co/QXUgwymmwF"
+			},
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "",
+				"Type": "image",
+				"URL": "https://pbs.twimg.com/card_img/1633858341431549958/DH7ewWQM?format=jpg\u0026name=small"
 			}
 		],
 		"HashTags": [
@@ -119,37 +122,134 @@
 				"CreatedAt": "0001-01-01T00:00:00Z",
 				"UpdatedAt": "0001-01-01T00:00:00Z",
 				"DeletedAt": null,
-				"TweetId": "1634082910046408704",
-				"Hashtags": "LiHongzhong"
+				"TweetId": "1634088685384740865",
+				"Hashtags": "#BhartiAirtel"
 			},
 			{
 				"ID": 0,
 				"CreatedAt": "0001-01-01T00:00:00Z",
 				"UpdatedAt": "0001-01-01T00:00:00Z",
 				"DeletedAt": null,
-				"TweetId": "1634082910046408704",
-				"Hashtags": "XiJinping."
-			},
-			{
-				"ID": 0,
-				"CreatedAt": "0001-01-01T00:00:00Z",
-				"UpdatedAt": "0001-01-01T00:00:00Z",
-				"DeletedAt": null,
-				"TweetId": "1634082910046408704",
-				"Hashtags": "China"
+				"TweetId": "1634088685384740865",
+				"Hashtags": "#BQStocks"
 			}
 		],
-		"UserHandle": null,
-		"Timestamp": "2023-03-10T06:45:00Z"
+		"UserHandle": [
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "1634088685384740865",
+				"UserHandle": "@Jefferies"
+			}
+		],
+		"Timestamp": "2023-03-10T07:07:57Z"
 	},
 	{
 		"ID": 0,
 		"CreatedAt": "0001-01-01T00:00:00Z",
 		"UpdatedAt": "0001-01-01T00:00:00Z",
 		"DeletedAt": null,
-		"TweetId": "1634082640969039872",
-		"ChannelName": "@ndtv",
-		"TweetContent": "\"Those guilty of lapses will be held accountable\": Kerala Minister on toxic air in Kochi after garbage fire",
+		"TweetId": "1634086959680290817",
+		"ChannelName": "@ndtvfeed",
+		"TweetContent": "Conductor, Sleeping, Killed As Government Bus Catches Fire In Bengaluru https://ndtv.com/bangalore-news/conductor-sleeping-killed-as-government-bus-catches-fire-in-bengaluru-3848707…",
+		"Media": [
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "",
+				"Type": "link",
+				"URL": "https://ndtv.com/bangalore-news/conductor-sleeping-killed-as-government-bus-catches-fire-in-bengaluru-3848707…"
+			},
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "",
+				"Type": "image",
+				"URL": "https://pbs.twimg.com/media/Fq1xbjUX0AAAb_r?format=jpg\u0026name=small"
+			}
+		],
+		"HashTags": null,
+		"UserHandle": null,
+		"Timestamp": "2023-03-10T07:01:05Z"
+	},
+	{
+		"ID": 0,
+		"CreatedAt": "0001-01-01T00:00:00Z",
+		"UpdatedAt": "0001-01-01T00:00:00Z",
+		"DeletedAt": null,
+		"TweetId": "1634086954156302336",
+		"ChannelName": "@ndtvfeed",
+		"TweetContent": "Family Of Pakistani Journalist Says He Is Missing, Police Deny Claim https://ndtv.com/world-news/family-of-pakistani-journalist-says-he-is-missing-police-deny-claim-3848822…",
+		"Media": [
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "",
+				"Type": "link",
+				"URL": "https://ndtv.com/world-news/family-of-pakistani-journalist-says-he-is-missing-police-deny-claim-3848822…"
+			},
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "",
+				"Type": "image",
+				"URL": "https://pbs.twimg.com/media/Fq1xbQnXgAABMcn?format=jpg\u0026name=small"
+			}
+		],
+		"HashTags": null,
+		"UserHandle": null,
+		"Timestamp": "2023-03-10T07:01:04Z"
+	},
+	{
+		"ID": 0,
+		"CreatedAt": "0001-01-01T00:00:00Z",
+		"UpdatedAt": "0001-01-01T00:00:00Z",
+		"DeletedAt": null,
+		"TweetId": "1634086943926394881",
+		"ChannelName": "@ndtvfeed",
+		"TweetContent": "Video: Chennai-Based Food Startup Launches India's 1st Unmanned Takeaway https://ndtv.com/offbeat/video-chennai-based-food-startup-launches-indias-1st-unmanned-takeaway-3848838…",
+		"Media": [
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "",
+				"Type": "link",
+				"URL": "https://ndtv.com/offbeat/video-chennai-based-food-startup-launches-indias-1st-unmanned-takeaway-3848838…"
+			},
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "",
+				"Type": "image",
+				"URL": "https://pbs.twimg.com/media/Fq1xaqOWwAEaKZM?format=jpg\u0026name=small"
+			}
+		],
+		"HashTags": null,
+		"UserHandle": null,
+		"Timestamp": "2023-03-10T07:01:01Z"
+	},
+	{
+		"ID": 0,
+		"CreatedAt": "0001-01-01T00:00:00Z",
+		"UpdatedAt": "0001-01-01T00:00:00Z",
+		"DeletedAt": null,
+		"TweetId": "1634086685226192897",
+		"ChannelName": "@bqprime",
+		"TweetContent": "Shortly on BQ Prime!\n\nA deep dive into every sector of corporate India and conversations with newsmakers to understand the key edge for investing. \n\nCatch all that and more on BQ Prime's new show 'Insight' with \n@_nirajshah\n.",
 		"Media": [
 			{
 				"ID": 0,
@@ -158,7 +258,7 @@
 				"DeletedAt": null,
 				"TweetId": "",
 				"Type": "image",
-				"URL": "https://pbs.twimg.com/amplify_video_thumb/1634082005846564867/img/mQpdvE06sOAp4UFM.jpg"
+				"URL": "https://pbs.twimg.com/media/Fqs_RsqaUAQzGCo.jpg"
 			},
 			{
 				"ID": 0,
@@ -167,21 +267,30 @@
 				"DeletedAt": null,
 				"TweetId": "",
 				"Type": "video",
-				"URL": "blob:https://twitter.com/1908416d-13ea-4357-b1f1-46ea2f300263"
+				"URL": "blob:https://twitter.com/a5a6723e-a769-4847-81ab-5b03a4ac3149"
 			}
 		],
 		"HashTags": null,
-		"UserHandle": null,
-		"Timestamp": "2023-03-10T06:43:56Z"
+		"UserHandle": [
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "1634086685226192897",
+				"UserHandle": "@_nirajshah"
+			}
+		],
+		"Timestamp": "2023-03-10T07:00:00Z"
 	},
 	{
 		"ID": 0,
 		"CreatedAt": "0001-01-01T00:00:00Z",
 		"UpdatedAt": "0001-01-01T00:00:00Z",
 		"DeletedAt": null,
-		"TweetId": "1634081161491226624",
-		"ChannelName": "@ndtvfeed",
-		"TweetContent": "Expansion In Membership Of UN Security Council Absolutely Essential: India https://ndtv.com/world-news/expansion-in-membership-of-un-security-council-absolutely-essential-india-3848767…",
+		"TweetId": "1634091854411997184",
+		"ChannelName": "@ndtv",
+		"TweetContent": "#NDTVBeeps | On Camera: Massive Bull Charges, Rams 4-Year-Old In UP",
 		"Media": [
 			{
 				"ID": 0,
@@ -189,12 +298,30 @@
 				"UpdatedAt": "0001-01-01T00:00:00Z",
 				"DeletedAt": null,
 				"TweetId": "",
-				"Type": "link",
-				"URL": "https://ndtv.com/world-news/expansion-in-membership-of-un-security-council-absolutely-essential-india-3848767…"
+				"Type": "image",
+				"URL": "https://pbs.twimg.com/amplify_video_thumb/1634091656650674177/img/leC3jXVvPVLng6rI.jpg"
+			},
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "",
+				"Type": "video",
+				"URL": "blob:https://twitter.com/30f81e0b-2c48-4789-80f7-e4844599cea6"
 			}
 		],
-		"HashTags": null,
+		"HashTags": [
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "1634091854411997184",
+				"Hashtags": "#NDTVBeeps"
+			}
+		],
 		"UserHandle": null,
-		"Timestamp": "2023-03-10T06:38:03Z"
+		"Timestamp": "2023-03-10T07:20:32Z"
 	}
 ]
