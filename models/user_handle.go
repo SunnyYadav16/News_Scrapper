@@ -11,13 +11,13 @@ type UserHandle struct {
 	NewsHandlers []*NewsHandler `gorm:"<-:false;many2many:newshandel_userhandle;constraint:OnDelete:CASCADE;"`
 }
 
-func (userHandle *UserHandle) Insert() error {
+func (userHandle *UserHandle) Insert() (bool, error) {
 	db := utils.NewDatabase()
 	check := userHandle.Find()
 	if !check {
-		return db.Create(&userHandle).Error
+		return true, db.Create(&userHandle).Error
 	}
-	return nil
+	return false, nil
 }
 
 func (userHandle *UserHandle) Find() bool {

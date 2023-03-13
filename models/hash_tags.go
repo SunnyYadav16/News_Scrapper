@@ -11,13 +11,13 @@ type HashTag struct {
 	NewsHandlers []*NewsHandler `gorm:"<-:false;many2many:newshandel_hashtags;constraint:OnDelete:CASCADE;"`
 }
 
-func (hashTag *HashTag) Insert() error {
+func (hashTag *HashTag) Insert() (bool, error) {
 	db := utils.NewDatabase()
 	check := hashTag.Find()
 	if !check {
-		return db.Create(&hashTag).Error
+		return true, db.Create(&hashTag).Error
 	}
-	return nil
+	return false, nil
 }
 
 func (hashTag *HashTag) Find() bool {

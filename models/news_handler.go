@@ -17,11 +17,6 @@ type NewsHandler struct {
 	Timestamp    time.Time
 }
 
-func (newsHandler *NewsHandler) create() error {
-	db := utils.NewDatabase()
-	return db.Create(&newsHandler).Error
-}
-
 func (newsHandler *NewsHandler) Find() bool {
 	db := utils.NewDatabase()
 	num := db.Model(&NewsHandler{}).Preload("HashTags", func(db *gorm.DB) *gorm.DB {
@@ -45,21 +40,11 @@ func All() (newsHandles []NewsHandler, err error) {
 	return
 }
 
-func (newsHandler *NewsHandler) Insert() error {
+func (newsHandler *NewsHandler) Insert() (bool, error) {
+	db := utils.NewDatabase()
 	check := newsHandler.Find()
 	if check {
-		return nil
+		return false, nil
 	}
-	err := newsHandler.create()
-	//for _, userHandle := range newsHandler.UserHandles {
-	//	userHandle.NewsHandlers[0].ID = newsHandler.ID
-	//	err = userHandle.Insert()
-	//	utils.PanicError("Error Inserting User Handle", err)
-	//}
-	//for _, hashTag := range newsHandler.HashTags {
-	//	hashTag.NewsHandlers[0].ID = newsHandler.ID
-	//	err := hashTag.Insert()
-	//	utils.PanicError("Error Inserting HAsh Tag", err)
-	//}
-	return err
+	return true, db.Create(&newsHandler).Error
 }

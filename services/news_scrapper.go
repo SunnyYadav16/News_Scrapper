@@ -217,10 +217,12 @@ func tagsHandlesAndLinksFinder(tweetContent string, scrappedNews *models.NewsHan
 		word := words[i]
 		word = strings.TrimSpace(word)
 		if word[:1] == "#" { //IF IT IS A MENTION
-			hashTag.TagName = word
+			final := strings.FieldsFunc(word, finalFunc)
+			hashTag.TagName = final[0]
 			scrappedNews.HashTags = append(scrappedNews.HashTags, &hashTag)
 		} else if word[:1] == "@" { //IF IT IS A USER-HANDLE
-			userHandle.Name = word
+			final := strings.FieldsFunc(word, finalFunc)
+			userHandle.Name = final[0]
 			scrappedNews.UserHandles = append(scrappedNews.UserHandles, &userHandle)
 		} else if strings.Contains(word, "#") { //IF A WORD CONTAINS A MENTION E.G. THE#aajtak
 			str := strings.Split(word, "#")

@@ -34,7 +34,8 @@ func main() {
 		//jsonResult []byte
 		err    error
 		driver selenium.WebDriver
-		//check      bool
+		count  = 0
+		length int
 	)
 	defer func() {
 		if r := recover(); r != nil {
@@ -56,22 +57,22 @@ func main() {
 	//SCRAPPING NEWS HANDLE
 	scrappedNews := services.NewsScrapper(driver, "timesofindia")
 
+	//TOTAL LENGTH OF SCRAPPED DATA
+	length = len(scrappedNews)
+
+	//DATA INSERTION
 	for _, news := range scrappedNews {
-		err = news.Insert()
-		utils.PanicError("Error Inserting Scrapped Data", err)
-		for _, userHandle := range news.UserHandles {
-			err = userHandle.Insert()
-			utils.PanicError("Error Inserting Data in User Handle", err)
-			err = insertNewsHandleUserHandle(userHandle.ID, news.ID)
-			utils.PanicError("Error Inserting In UserHandle And NewsHandler Join Table", err)
-		}
-		for _, hashTag := range news.HashTags {
-			err = hashTag.Insert()
-			utils.PanicError("Error Inserting Data in Hash Tag", err)
-			err = insertNewsHandleHashTag(hashTag.ID, news.ID)
-			utils.PanicError("Error Inserting In UserHandle And NewsHandler Join Table", err)
-		}
+		count = insertScrappedData(&news, count)
 	}
+
+	//COUNT OF NEW DATA INSERTED IN DATABASE
+	total := length - count
+	if total == 0 { //IF NO RECORDS WERE INSERTED IN DATABASE
+		fmt.Println("Records Up-To-Date.")
+	} else { //ELSE NUMBER OF RECORDS INSERTED IN DATABASE
+		fmt.Println(total, " Record(s) Inserted.")
+	}
+
 	//scrappedNews = []models.NewsHandler{}
 	//scrappedNews, err = models.All()
 	//services.CheckError("Error Getting All Models", err)
@@ -83,20 +84,75 @@ func main() {
 	//fmt.Println(string(jsonResult))
 }
 
-func insertNewsHandleUserHandle(userHandleID, newsID uint) error {
-	db := utils.NewDatabase()
-	row := db.Table("newshandel_userhandle").Where("user_handle_id = ? AND news_handler_id = ?", userHandleID, newsID)
-	if row.RowsAffected < 0 {
-		return db.Exec("INSERT INTO  newshandel_userhandle (user_handle_id,news_handler_id) VALUES (?,?)", userHandleID, newsID).Error
+// INSERTING SCRAPPED DATA
+func insertScrappedData(news *models.NewsHandler, count int) int {
+	defer func() {
+		if r := recover(); r != nil {
+			fmt.Println("Error: ", r)
+			panic("Failed To Insert Data")
+		}
+	}()
+
+	var (
+		check bool
+		err   error
+	)
+	//TRY TO INSERT SCRAPPED DATA
+	check, err = news.Insert()
+	if check { //IF DATA NOT EXISTS IN DATABASE
+		utils.PanicError("Error Inserting Scrapped Data", err)
+
+		//TRY TO INSERT USER-HANDLE DATA
+		for _, userHandle := range news.UserHandles {
+			check, err = userHandle.Insert()
+			if check { //IF DATA NOT EXISTS IN DATABASE
+				utils.PanicError("Error Inserting Data in User Handle", err)
+			}
+			check, err = insertNewsHandleUserHandle(userHandle.ID, news.ID)
+			if check { //IF DATA NOT EXISTS IN DATABASE
+				utils.PanicError("Error Inserting In UserHandle And NewsHandler Join Table", err)
+			}
+		}
+
+		//TRY TO INSERT HASH-TAG DATA
+		for _, hashTag := range news.HashTags {
+			check, err = hashTag.Insert()
+			if check { //IF DATA NOT EXISTS IN DATABASE
+				utils.PanicError("Error Inserting Data in Hash Tag", err)
+			}
+			check, err = insertNewsHandleHashTag(hashTag.ID, news.ID)
+			if check { //IF DATA NOT EXISTS IN DATABASE
+				utils.PanicError("Error Inserting In UserHandle And NewsHandler Join Table", err)
+			}
+		}
+	} else {
+
+		//COUNT OF SCRAPPED DATA ALREADY PRESENT IN DATABASE
+		count++
 	}
-	return nil
+	return count
 }
 
-func insertNewsHandleHashTag(hashTagID, newsID uint) error {
+// INSERTING DATA IN NEWS-HANDLE AND USER-HANDLE JOIN TABLE
+func insertNewsHandleUserHandle(userHandleID, newsID uint) (bool, error) {
 	db := utils.NewDatabase()
-	row := db.Table("newshandel_hashtags").Where("hash_tag_id = ? AND news_handler_id = ?", hashTagID, newsID)
-	if row.RowsAffected < 0 {
-		return db.Exec("INSERT INTO  newshandel_hashtags (hash_tag_id,news_handler_id) VALUES (?,?)", hashTagID, newsID).Error
+
+	//CHECK IF DATA ALREADY EXISTS
+	row := db.Table("newshandel_userhandle").Where("user_handle_id = ? AND news_handler_id = ?", userHandleID, newsID)
+	if row.RowsAffected < 0 { //IF DATA NOT EXISTS
+		return true, db.Exec("INSERT INTO  newshandel_userhandle (user_handle_id,news_handler_id) VALUES (?,?)", userHandleID, newsID).Error
 	}
-	return nil
+	return false, nil
+}
+
+// INSERTING DATA IN NEWS-HANDLE AND HASH-TAG JOIN TABLE
+func insertNewsHandleHashTag(hashTagID, newsID uint) (bool, error) {
+	db := utils.NewDatabase()
+
+	//CHECK IF DATA ALREADY EXISTS
+	row := db.Table("newshandel_hashtags").Where("hash_tag_id = ? AND news_handler_id = ?", hashTagID, newsID)
+	if row.RowsAffected < 0 { //IF DATA NOT EXISTS
+		return true, db.Exec("INSERT INTO  newshandel_hashtags (hash_tag_id,news_handler_id) VALUES (?,?)", hashTagID, newsID).Error
+	}
+	return false, nil
 }
