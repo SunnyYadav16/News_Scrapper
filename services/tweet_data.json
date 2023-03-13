@@ -1,86 +1,192 @@
 [
 	{
+		"TweetId": "1635257102259109888",
 		"ChannelName": "IndiaToday",
-		"TweetId": "1634121563267104768",
-		"TweetContent": "6-year-old child from Virginia who shot his teacher won't go to jail for this reason...\n\n#NewsMo #USA #SchoolShooting #GunLaws #Virginia #Child #US",
+		"TweetContent": "Double delight for India at the #Oscars | #6PMPrime with \n@Akshita_N\n \u0026 \n@nabilajamal_\n | #Oscars2023 #AcademyAwards #ITLivestream",
+		"Timestamp": "2023-03-13T12:30:49Z",
 		"HashTags": [
-			"#NewsMo",
-			"#USA",
-			"#SchoolShooting",
-			"#GunLaws",
-			"#Virginia",
-			"#Child",
-			"#US"
-		],
-		"UserHandle": null,
-		"Timestamp": "2023-03-10T09:18:35Z",
-		"Media": [
 			{
-				"Type": "Video",
-				"URL": "blob:https://twitter.com/e11ca8b8-0a9e-4b4d-9a42-c1adae2df948"
-			}
-		]
-	},
-	{
-		"ChannelName": "IndiaToday",
-		"TweetId": "1634120205780795392",
-		"TweetContent": "K Kavitha met Vijay Nair. Funds were transferred from Hyderabad to Delhi: ED\n(\n@AneeshaMathur\n) \n#News #ManishSisodia \n@nabilajamal_",
-		"HashTags": [
-			"#News",
-			"#ManishSisodia"
-		],
-		"UserHandle": [
-			"@AneeshaMathur",
-			"@nabilajamal_"
-		],
-		"Timestamp": "2023-03-10T09:13:12Z",
-		"Media": [
-			{
-				"Type": "Video",
-				"URL": "blob:https://twitter.com/83398b46-982b-43e8-9a7b-e151593a4879"
-			}
-		]
-	},
-	{
-		"ChannelName": "IndiaToday",
-		"TweetId": "1634120033420050434",
-		"TweetContent": "#ManishSisodia had direct role in Delhi liquor scam: ED tells court\n\nBy \n@SrishtiOjha11\n and \n@sardakanu_law",
-		"HashTags": [
-			"#ManishSisodia"
-		],
-		"UserHandle": [
-			"@SrishtiOjha11",
-			"@sardakanu_law"
-		],
-		"Timestamp": "2023-03-10T09:12:31Z",
-		"Media": [
-			{
-				"Type": "Image",
-				"URL": "https://pbs.twimg.com/card_img/1634119828045807616/ff4Nx20v?format=jpg\u0026name=small"
+				"TweetId": "1635257102259109888",
+				"HashTags": "#Oscars"
 			},
 			{
-				"Type": "Image attached article Link",
-				"URL": "https://t.co/VVOuGSYCwW"
+				"TweetId": "1635257102259109888",
+				"HashTags": "#6PMPrime"
+			},
+			{
+				"TweetId": "1635257102259109888",
+				"HashTags": "#Oscars2023"
+			},
+			{
+				"TweetId": "1635257102259109888",
+				"HashTags": "#AcademyAwards"
+			},
+			{
+				"TweetId": "1635257102259109888",
+				"HashTags": "#ITLivestream"
+			}
+		],
+		"UserHandle": [
+			{
+				"TweetId": "1635257102259109888",
+				"UserHandle": "@Akshita_N"
+			},
+			{
+				"TweetId": "1635257102259109888",
+				"UserHandle": "@nabilajamal_"
+			}
+		],
+		"Media": [
+			{
+				"TweetId": "1635257102259109888",
+				"Type": "Image",
+				"URL": "https://pbs.twimg.com/card_img/1635260644542025730/QJcPy4qA?format=jpg\u0026name=orig"
 			}
 		]
 	},
 	{
+		"TweetId": "1635260442653106176",
 		"ChannelName": "IndiaToday",
-		"TweetId": "1634119469936132096",
-		"TweetContent": "ED said the Delhi liquor policy was framed to benefit certain individuals. \n@AneeshaMathur\n with more details.\n#News #ManishSisodia \n@nabilajamal_",
+		"TweetContent": "#Oscars2023: The big takeaways | #Oscars #RRR #NaatuNaatu #TheElephantWhisperers #AcademyAwards\nFull video of #6PMPrime with \n@Akshita_N\n \u0026 \n@nabilajamal_\n - https://bit.ly/3Lnp0Q2",
+		"Timestamp": "2023-03-13T12:44:05Z",
 		"HashTags": [
-			"#News",
-			"#ManishSisodia"
+			{
+				"TweetId": "1635260442653106176",
+				"HashTags": "#Oscars2023"
+			},
+			{
+				"TweetId": "1635260442653106176",
+				"HashTags": "#Oscars"
+			},
+			{
+				"TweetId": "1635260442653106176",
+				"HashTags": "#RRR"
+			},
+			{
+				"TweetId": "1635260442653106176",
+				"HashTags": "#NaatuNaatu"
+			},
+			{
+				"TweetId": "1635260442653106176",
+				"HashTags": "#TheElephantWhisperers"
+			},
+			{
+				"TweetId": "1635260442653106176",
+				"HashTags": "#AcademyAwards"
+			},
+			{
+				"TweetId": "1635260442653106176",
+				"HashTags": "#6PMPrime"
+			}
 		],
 		"UserHandle": [
-			"@AneeshaMathur",
-			"@nabilajamal_"
+			{
+				"TweetId": "1635260442653106176",
+				"UserHandle": "@Akshita_N"
+			},
+			{
+				"TweetId": "1635260442653106176",
+				"UserHandle": "@nabilajamal_"
+			}
 		],
-		"Timestamp": "2023-03-10T09:10:16Z",
 		"Media": [
 			{
+				"TweetId": "1635260442653106176",
+				"Type": "Tweet attached external link",
+				"URL": "https://t.co/rUGzRLp2ZB"
+			},
+			{
+				"TweetId": "1635260442653106176",
+				"Type": "Image",
+				"URL": "https://pbs.twimg.com/amplify_video_thumb/1635259430978633730/img/-kisHhEmvjl1Wve-.jpg"
+			},
+			{
+				"TweetId": "1635260442653106176",
 				"Type": "Video",
-				"URL": "blob:https://twitter.com/878885ec-5362-47d0-8fed-22093ae62458"
+				"URL": "blob:https://twitter.com/e7c17b70-e4fe-4ff0-bfa7-3664572dfd85"
+			}
+		]
+	},
+	{
+		"TweetId": "1635260327293235204",
+		"ChannelName": "IndiaToday",
+		"TweetContent": "Retail inflation marginally eased from 6.52% in January to 6.44% in February 2023. The fuel \u0026 light category saw the maximum year-on-year jump of 9.9%. \n\n#DIU #Retailinflation",
+		"Timestamp": "2023-03-13T12:43:38Z",
+		"HashTags": [
+			{
+				"TweetId": "1635260327293235204",
+				"HashTags": "#DIU"
+			},
+			{
+				"TweetId": "1635260327293235204",
+				"HashTags": "#Retailinflation"
+			}
+		],
+		"UserHandle": null,
+		"Media": [
+			{
+				"TweetId": "1635260327293235204",
+				"Type": "Image",
+				"URL": "https://pbs.twimg.com/media/FrGciGHaUAABKXm?format=jpg\u0026name=small"
+			}
+		]
+	},
+	{
+		"TweetId": "1635260108379701248",
+		"ChannelName": "IndiaToday",
+		"TweetContent": "#EXCLUSIVE | It's the Indianness that has to be celebrated: Singer \n@VishalMMishra\n on north-south divide | #Oscars #Oscars2023 #AcademyAwards\nFull video of #5iveLive with \n@Akshita_N\n \u0026 \n@nabilajamal_\n - https://bit.ly/3TdbOyZ",
+		"Timestamp": "2023-03-13T12:42:46Z",
+		"HashTags": [
+			{
+				"TweetId": "1635260108379701248",
+				"HashTags": "#EXCLUSIVE"
+			},
+			{
+				"TweetId": "1635260108379701248",
+				"HashTags": "#Oscars"
+			},
+			{
+				"TweetId": "1635260108379701248",
+				"HashTags": "#Oscars2023"
+			},
+			{
+				"TweetId": "1635260108379701248",
+				"HashTags": "#AcademyAwards"
+			},
+			{
+				"TweetId": "1635260108379701248",
+				"HashTags": "#5iveLive"
+			}
+		],
+		"UserHandle": [
+			{
+				"TweetId": "1635260108379701248",
+				"UserHandle": "@VishalMMishra"
+			},
+			{
+				"TweetId": "1635260108379701248",
+				"UserHandle": "@Akshita_N"
+			},
+			{
+				"TweetId": "1635260108379701248",
+				"UserHandle": "@nabilajamal_"
+			}
+		],
+		"Media": [
+			{
+				"TweetId": "1635260108379701248",
+				"Type": "Tweet attached external link",
+				"URL": "https://t.co/iyjKcOy6Yf"
+			},
+			{
+				"TweetId": "1635260108379701248",
+				"Type": "Image",
+				"URL": "https://pbs.twimg.com/amplify_video_thumb/1635256063430737920/img/o9en3t7mceNzAMC9.jpg"
+			},
+			{
+				"TweetId": "1635260108379701248",
+				"Type": "Video",
+				"URL": "blob:https://twitter.com/9f35b1fc-a88e-4232-a000-31099e258120"
 			}
 		]
 	}

@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/SunnyYadav16/News_Scrapper/models"
 	"github.com/SunnyYadav16/News_Scrapper/services"
 	"github.com/tebeka/selenium"
 	"time"
@@ -16,11 +17,14 @@ func main() {
 		}
 		services.CloseService(driver)
 	}()
+	models.InitConnection()
 	driver = services.TwitterLogin("SimformGolang", "Golang@Simform@123")
 	time.Sleep(10 * time.Second)
 	url, err := driver.CurrentURL()
 	services.CheckError("Error Getting Current URL", err)
 	fmt.Println(url)
 	services.TwitterLandingPage(driver)
-	services.NewsScrapper(driver)
+	newshandler := services.NewsScrapper(driver)
+	models.Insert(&newshandler)
+	services.WriteIntoJSONFILE(&newshandler)
 }
