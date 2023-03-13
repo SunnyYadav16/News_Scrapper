@@ -29,14 +29,14 @@ func NewsScrapper(driver selenium.WebDriver, channelName string) (newsScrapped [
 		channel  string //NAME OF NEWS HANDLE CHANNEL
 	)
 
-	//GET CHANNEL NAME
+	//GET CHANNEL NAME UNCOMMENT BELOW CODE FOR GENERALIZED
 	switch channelName {
 	case "timesofindia":
 		channel = "Times Of India"
-	case "ndtv":
-		channel = "NDTV"
-	case "indiatoday":
-		channel = "India Today"
+	//case "ndtv":
+	//	channel = "NDTV"
+	//case "indiatoday":
+	//	channel = "India Today"
 	default:
 		err = errors.New("invalid channel")
 		CheckError("Scrapping Invalid Channel", err)
