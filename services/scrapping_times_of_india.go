@@ -3,6 +3,7 @@ package services
 import (
 	"fmt"
 	"github.com/tebeka/selenium"
+	"time"
 )
 
 func TimesOfIndia(driver selenium.WebDriver) {
@@ -25,8 +26,8 @@ func TimesOfIndia(driver selenium.WebDriver) {
 	//COUNT OF NEW DATA INSERTED IN DATABASE
 	total := length - count
 	if total == 0 { //IF NO RECORDS WERE INSERTED IN DATABASE
-		fmt.Println("Records Up-To-Date.")
+		fmt.Println("Records Up-To-Date. ", time.Now())
 	} else { //ELSE NUMBER OF RECORDS INSERTED IN DATABASE
-		fmt.Println(total, " Record(s) Inserted.")
+		fmt.Println(total, " Record(s) Inserted. ", time.Now())
 	}
 }

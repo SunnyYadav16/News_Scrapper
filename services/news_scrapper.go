@@ -126,7 +126,7 @@ func scrapNews(scrappedNews *models.NewsHandler, article selenium.WebElement) {
 	CheckError("Tweet Contents Div Element Not Found", err)
 
 	//FINDING TWEET CONTENT'S ELEMENT
-	tweetContentSpans, err = tweetContentDiv.FindElements(selenium.ByCSSSelector, ".css-901oao.css-16my406.r-poiln3.r-bcqeeo.r-qvutc0")
+	tweetContentSpans, err = tweetContentDiv.FindElements(selenium.ByCSSSelector, "span.css-901oao.css-16my406.r-poiln3.r-bcqeeo.r-qvutc0")
 	CheckError("Tweet Contents Span Element Not Found", err)
 
 	//TOTAL LENGTH OF SPAN ELEMENT FETCHED FOR TWEET CONTENT
@@ -204,7 +204,7 @@ func tagsHandlesAndLinksFinder(tweetContent string, scrappedNews *models.NewsHan
 
 	//SPLITTING WORDS
 	finalFunc := func(characters rune) bool {
-		return characters == ')' || characters == ',' || characters == '.' || characters == '!' || characters == '?' || characters == ':' || characters == ';' || characters == '`' || characters == '"'
+		return characters == ')' || characters == ',' || characters == '.' || characters == '!' || characters == '?' || characters == ':' || characters == ';' || characters == '`' || characters == '"' || characters == rune('\'') || characters == '-' || characters == ']' || characters == '}' || characters == '*' || characters == '|'
 	}
 
 	words := strings.FieldsFunc(tweetContent, splitter)

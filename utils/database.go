@@ -6,7 +6,6 @@ import (
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
-	"os"
 	"sync"
 )
 
@@ -38,13 +37,15 @@ type database struct {
 }
 
 func loadVariables() (db database) {
-	err := godotenv.Load()
-	PanicError("Error loading .env file", err)
-	db.Host = os.Getenv("HOST")
-	db.Port = os.Getenv("DBPORT")
-	db.User = os.Getenv("USER")
-	db.Name = os.Getenv("NAME")
-	db.Password = os.Getenv("PASSWORD")
+	//err := godotenv.Load()
+	//PanicError("Error loading .env file", err)
+	myEnv, err := godotenv.Read()
+	PanicError("Error Reading .env file", err)
+	db.Host = myEnv["HOST"]
+	db.Port = myEnv["DBPORT"]
+	db.User = myEnv["USER"]
+	db.Name = myEnv["NAME"]
+	db.Password = myEnv["PASSWORD"]
 	return
 }
 
