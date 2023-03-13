@@ -25,7 +25,7 @@ func getTimestamp(obj selenium.WebElement) (timestamp time2.Time) {
 }
 
 func getChannelName(obj selenium.WebElement) (channelName string) {
-	channelTemp, err := obj.FindElement(selenium.ByXPATH, ".//div[@data-testid=\"User-Names\"]/div[2]/div[1]/div/a//span")
+	channelTemp, err := obj.FindElement(selenium.ByXPATH, ".//div[@data-testid=\"User-Names\"]/div/div/a/div[1]/div/span/span")
 	CheckError("error while finding element:", err)
 	channelName, err = channelTemp.Text()
 	CheckError("error while finding text in element:", err)
@@ -67,18 +67,18 @@ func getExternalURL(obj selenium.WebElement) (externalURL []models.Media) {
 	return
 }
 
-func getCardLinks(obj selenium.WebElement) (cards []models.Media) {
+func getCardLinks(obj selenium.WebElement, tweetId string) (cards []models.Media) {
 	CardURL, err := obj.FindElements(selenium.ByXPATH, ".//div[@data-testid=\"card.layoutLarge.media\"]/a")
 	CheckError("error:", err)
 	for _, obj := range CardURL {
 		URL, err := obj.GetAttribute("href")
 		CheckError("error:", err)
-		cards = append(cards, models.Media{Type: "link", URL: URL})
+		cards = append(cards, models.Media{TweetId: tweetId, Type: "link", URL: URL})
 	}
 	return
 }
 
-func getImages(obj selenium.WebElement) (images []models.Media) {
+func getImages(obj selenium.WebElement, tweetId string) (images []models.Media) {
 	imgs, err := obj.FindElements(selenium.ByCSSSelector, "img.css-9pa8cd")
 	CheckError("error while finding element:", err)
 	for _, obj := range imgs {
@@ -86,19 +86,19 @@ func getImages(obj selenium.WebElement) (images []models.Media) {
 		CheckError("error:", err)
 		//utf8.EncodeRune(imgs)
 		if !strings.Contains(img, "profile_images") {
-			images = append(images, models.Media{Type: "image", URL: img})
+			images = append(images, models.Media{TweetId: tweetId, Type: "image", URL: img})
 		}
 	}
 	return
 }
 
-func getVideos(obj selenium.WebElement) (videos []models.Media) {
+func getVideos(obj selenium.WebElement, tweetId string) (videos []models.Media) {
 	video, err := obj.FindElements(selenium.ByCSSSelector, "video")
 	CheckError("error while finding element:", err)
 	for _, obj := range video {
 		video, err := obj.GetAttribute("src")
 		CheckError("error:", err)
-		videos = append(videos, models.Media{Type: "video", URL: video})
+		videos = append(videos, models.Media{TweetId: tweetId, Type: "video", URL: video})
 	}
 	return
 }
@@ -128,15 +128,15 @@ func getTweetText(obj selenium.WebElement) models.NewsHandler {
 	//main tweet
 	tweetData.TweetContent = getTweetContent(obj)
 	//HashTags & User Handles
-	tweetData.HashTags, tweetData.UserHandle = getUserHandlesAndHashtags(obj, tweetData.TweetContent, tweetData.TweetId)
+	tweetData.HashTags, tweetData.UserHandles = getUserHandlesAndHashtags(obj, tweetData.TweetContent, tweetData.TweetId)
 	//external urls
 	tweetData.Media = getExternalURL(obj)
 	//card Links
-	tweetData.Media = append(tweetData.Media, getCardLinks(obj)...)
+	tweetData.Media = append(tweetData.Media, getCardLinks(obj, tweetData.TweetId)...)
 	//images
-	tweetData.Media = append(tweetData.Media, getImages(obj)...)
+	tweetData.Media = append(tweetData.Media, getImages(obj, tweetData.TweetId)...)
 	//videos
-	tweetData.Media = append(tweetData.Media, getVideos(obj)...)
+	tweetData.Media = append(tweetData.Media, getVideos(obj, tweetData.TweetId)...)
 
 	return tweetData
 }
@@ -155,7 +155,10 @@ func NewsScrapperNDTV(driver selenium.WebDriver, channelName string) (newsScrapp
 
 		for _, obj := range tweetTexts {
 			newsScrapped = append(newsScrapped, getTweetText(obj))
+
+			//break
 		}
+		insertData(newsScrapped)
 	}
 
 	return newsScrapped
@@ -167,7 +170,6 @@ func ConvertToJSON(dataset []models.NewsHandler) {
 	err = ioutil.WriteFile("twitterData1.json", jsonData, os.ModePerm)
 	CheckError("error occured while writing into file:", err)
 	time2.Sleep(10 * time2.Second)
-	fmt.Println("Successfully inserted into database")
 }
 
 func splitCondition(r rune) bool {

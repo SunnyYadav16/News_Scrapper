@@ -13,7 +13,7 @@ var newData []models.NewsHandler
 
 func main() {
 	var driver selenium.WebDriver
-
+	services.InitConnection()
 	defer func() {
 		if r := recover(); r != nil {
 			fmt.Println("Error: ", r)
@@ -28,4 +28,5 @@ func main() {
 	fmt.Println(url)
 	newData = services.NewsScrapperNDTV(driver, "ndtv")
 	services.ConvertToJSON(newData)
+
 }

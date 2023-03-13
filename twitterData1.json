@@ -1,30 +1,18 @@
 [
 	{
-		"ID": 0,
-		"CreatedAt": "0001-01-01T00:00:00Z",
-		"UpdatedAt": "0001-01-01T00:00:00Z",
-		"DeletedAt": null,
-		"TweetId": "1634093087726206978",
-		"ChannelName": "@CricketNDTV",
-		"TweetContent": "#UsmanKhawaja and #CameronGreen frustrated the Indian team in the 4th Test at Ahmedabad, both registering individual centuries.\n#INDvAUS",
+		"TweetId": "1635112640510054400",
+		"ChannelName": "NDTV",
+		"TweetContent": "India at the #Oscars - #RRR triumphs: Blockbuster hit #NaatuNaatu wins Best Original Song  \n\n#Oscars2023",
+		"Timestamp": "2023-03-13T02:56:47Z",
 		"Media": [
 			{
 				"ID": 0,
 				"CreatedAt": "0001-01-01T00:00:00Z",
 				"UpdatedAt": "0001-01-01T00:00:00Z",
 				"DeletedAt": null,
-				"TweetId": "",
-				"Type": "link",
-				"URL": "https://t.co/FC5lyeWMOE"
-			},
-			{
-				"ID": 0,
-				"CreatedAt": "0001-01-01T00:00:00Z",
-				"UpdatedAt": "0001-01-01T00:00:00Z",
-				"DeletedAt": null,
-				"TweetId": "",
+				"TweetId": "1635112640510054400",
 				"Type": "image",
-				"URL": "https://pbs.twimg.com/card_img/1634093093417779201/RzHJu_jb?format=jpg\u0026name=small"
+				"URL": "https://pbs.twimg.com/media/FrEWHkOaUAAZLJY?format=jpg\u0026name=small"
 			}
 		],
 		"HashTags": [
@@ -33,295 +21,217 @@
 				"CreatedAt": "0001-01-01T00:00:00Z",
 				"UpdatedAt": "0001-01-01T00:00:00Z",
 				"DeletedAt": null,
-				"TweetId": "1634093087726206978",
-				"Hashtags": "#UsmanKhawaja"
+				"TweetId": "1635112640510054400",
+				"Hashtags": "#Oscars"
 			},
 			{
 				"ID": 0,
 				"CreatedAt": "0001-01-01T00:00:00Z",
 				"UpdatedAt": "0001-01-01T00:00:00Z",
 				"DeletedAt": null,
-				"TweetId": "1634093087726206978",
-				"Hashtags": "#CameronGreen"
+				"TweetId": "1635112640510054400",
+				"Hashtags": "#RRR"
 			},
 			{
 				"ID": 0,
 				"CreatedAt": "0001-01-01T00:00:00Z",
 				"UpdatedAt": "0001-01-01T00:00:00Z",
 				"DeletedAt": null,
-				"TweetId": "1634093087726206978",
-				"Hashtags": "#INDvAUS"
+				"TweetId": "1635112640510054400",
+				"Hashtags": "#NaatuNaatu"
+			},
+			{
+				"ID": 0,
+				"CreatedAt": "0001-01-01T00:00:00Z",
+				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"DeletedAt": null,
+				"TweetId": "1635112640510054400",
+				"Hashtags": "#Oscars2023"
 			}
 		],
-		"UserHandle": null,
-		"Timestamp": "2023-03-10T07:25:26Z"
+		"UserHandles": null
 	},
 	{
-		"ID": 0,
-		"CreatedAt": "0001-01-01T00:00:00Z",
-		"UpdatedAt": "0001-01-01T00:00:00Z",
-		"DeletedAt": null,
-		"TweetId": "1634088726027436034",
-		"ChannelName": "@NDTVProfit",
-		"TweetContent": "Boeing To Set Up Flight Conversion Facility In India https://ndtv.com/business/boeing-to-set-up-flight-conversion-facility-in-india-3848632…",
+		"TweetId": "1635211598917763072",
+		"ChannelName": "DoctorNDTV",
+		"TweetContent": "Here are a few straightforward suggestions to help you fit daily exercise into your schedule.",
+		"Timestamp": "2023-03-13T09:30:00Z",
 		"Media": [
 			{
-				"ID": 0,
-				"CreatedAt": "0001-01-01T00:00:00Z",
-				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"ID": 25,
+				"CreatedAt": "2023-03-13T15:01:50.440016426+05:30",
+				"UpdatedAt": "2023-03-13T15:01:50.440016426+05:30",
 				"DeletedAt": null,
-				"TweetId": "",
+				"TweetId": "1635211598917763072",
 				"Type": "link",
-				"URL": "https://ndtv.com/business/boeing-to-set-up-flight-conversion-facility-in-india-3848632…"
+				"URL": "https://t.co/ZYqcqHxY3g"
 			},
 			{
-				"ID": 0,
-				"CreatedAt": "0001-01-01T00:00:00Z",
-				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"ID": 26,
+				"CreatedAt": "2023-03-13T15:01:50.440016426+05:30",
+				"UpdatedAt": "2023-03-13T15:01:50.440016426+05:30",
 				"DeletedAt": null,
-				"TweetId": "",
+				"TweetId": "1635211598917763072",
 				"Type": "image",
-				"URL": "https://pbs.twimg.com/media/Fq1zCXXXsAAi6sV?format=jpg\u0026name=small"
+				"URL": "https://pbs.twimg.com/card_img/1635161489005748225/2PSMMMxT?format=jpg\u0026name=small"
 			}
 		],
 		"HashTags": null,
-		"UserHandle": null,
-		"Timestamp": "2023-03-10T07:08:06Z"
+		"UserHandles": null
 	},
 	{
-		"ID": 0,
-		"CreatedAt": "0001-01-01T00:00:00Z",
-		"UpdatedAt": "0001-01-01T00:00:00Z",
-		"DeletedAt": null,
-		"TweetId": "1634088685384740865",
-		"ChannelName": "@bqprime",
-		"TweetContent": "Shares of #BhartiAirtel gain as \n@Jefferies\n upgrades the stock to 'buy' and raises the price target. #BQStocks",
+		"TweetId": "1635211600620826627",
+		"ChannelName": "BQ Prime",
+		"TweetContent": "Foreign Minister S. Jaishankar will speak to heads of international relations departments and professors from over 40 central universities next week about India's evolving foreign policy. \n@Vasudha156\n reports.",
+		"Timestamp": "2023-03-13T09:30:01Z",
 		"Media": [
 			{
-				"ID": 0,
-				"CreatedAt": "0001-01-01T00:00:00Z",
-				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"ID": 27,
+				"CreatedAt": "2023-03-13T15:01:50.440016426+05:30",
+				"UpdatedAt": "2023-03-13T15:01:50.440016426+05:30",
 				"DeletedAt": null,
-				"TweetId": "",
+				"TweetId": "1635211600620826627",
 				"Type": "link",
-				"URL": "https://t.co/QXUgwymmwF"
+				"URL": "https://t.co/MEp9d6z7BP"
 			},
 			{
-				"ID": 0,
-				"CreatedAt": "0001-01-01T00:00:00Z",
-				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"ID": 28,
+				"CreatedAt": "2023-03-13T15:01:50.440016426+05:30",
+				"UpdatedAt": "2023-03-13T15:01:50.440016426+05:30",
 				"DeletedAt": null,
-				"TweetId": "",
+				"TweetId": "1635211600620826627",
 				"Type": "image",
-				"URL": "https://pbs.twimg.com/card_img/1633858341431549958/DH7ewWQM?format=jpg\u0026name=small"
+				"URL": "https://pbs.twimg.com/card_img/1635166550784192512/jENA59av?format=png\u0026name=small"
+			}
+		],
+		"HashTags": null,
+		"UserHandles": [
+			{
+				"ID": 4,
+				"CreatedAt": "2023-03-13T15:01:50.440868561+05:30",
+				"UpdatedAt": "2023-03-13T15:01:50.440868561+05:30",
+				"DeletedAt": null,
+				"TweetId": "1635211600620826627",
+				"UserHandle": "@Vasudha156"
+			}
+		]
+	},
+	{
+		"TweetId": "1635211633159962624",
+		"ChannelName": "NDTV Profit",
+		"TweetContent": "Cryptocurrency Firm Circle's Operations Hit By Signature Bank Closure https://ndtv.com/business/cryptocurrency-firm-circles-operations-hit-by-signature-bank-closure-3856529…",
+		"Timestamp": "2023-03-13T09:30:08Z",
+		"Media": [
+			{
+				"ID": 29,
+				"CreatedAt": "2023-03-13T15:01:50.440016426+05:30",
+				"UpdatedAt": "2023-03-13T15:01:50.440016426+05:30",
+				"DeletedAt": null,
+				"TweetId": "1635211633159962624",
+				"Type": "link",
+				"URL": "https://ndtv.com/business/cryptocurrency-firm-circles-operations-hit-by-signature-bank-closure-3856529…"
+			},
+			{
+				"ID": 30,
+				"CreatedAt": "2023-03-13T15:01:50.440016426+05:30",
+				"UpdatedAt": "2023-03-13T15:01:50.440016426+05:30",
+				"DeletedAt": null,
+				"TweetId": "1635211633159962624",
+				"Type": "image",
+				"URL": "https://pbs.twimg.com/media/FrFwUJ-X0AEq4lG?format=jpg\u0026name=small"
+			}
+		],
+		"HashTags": null,
+		"UserHandles": null
+	},
+	{
+		"TweetId": "1635211650524676097",
+		"ChannelName": "The Fineprint | BQ Prime",
+		"TweetContent": "#RelianceCapital's Insolvency: Supreme Court admits #TorrentInvestment’s plea against #NCLAT's decision.\n@VarunGakhar1\n reports.",
+		"Timestamp": "2023-03-13T09:30:12Z",
+		"Media": [
+			{
+				"ID": 31,
+				"CreatedAt": "2023-03-13T15:01:50.440016426+05:30",
+				"UpdatedAt": "2023-03-13T15:01:50.440016426+05:30",
+				"DeletedAt": null,
+				"TweetId": "1635211650524676097",
+				"Type": "link",
+				"URL": "https://t.co/4aCZddJf52"
+			},
+			{
+				"ID": 32,
+				"CreatedAt": "2023-03-13T15:01:50.440016426+05:30",
+				"UpdatedAt": "2023-03-13T15:01:50.440016426+05:30",
+				"DeletedAt": null,
+				"TweetId": "1635211650524676097",
+				"Type": "image",
+				"URL": "https://pbs.twimg.com/card_img/1633861677451034626/qn6xIhNz?format=png\u0026name=small"
 			}
 		],
 		"HashTags": [
 			{
-				"ID": 0,
-				"CreatedAt": "0001-01-01T00:00:00Z",
-				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"ID": 15,
+				"CreatedAt": "2023-03-13T15:01:50.440568262+05:30",
+				"UpdatedAt": "2023-03-13T15:01:50.440568262+05:30",
 				"DeletedAt": null,
-				"TweetId": "1634088685384740865",
-				"Hashtags": "#BhartiAirtel"
+				"TweetId": "1635211650524676097",
+				"Hashtags": "#RelianceCapital's"
 			},
 			{
-				"ID": 0,
-				"CreatedAt": "0001-01-01T00:00:00Z",
-				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"ID": 16,
+				"CreatedAt": "2023-03-13T15:01:50.440568262+05:30",
+				"UpdatedAt": "2023-03-13T15:01:50.440568262+05:30",
 				"DeletedAt": null,
-				"TweetId": "1634088685384740865",
-				"Hashtags": "#BQStocks"
-			}
-		],
-		"UserHandle": [
+				"TweetId": "1635211650524676097",
+				"Hashtags": "#TorrentInvestment’s"
+			},
 			{
-				"ID": 0,
-				"CreatedAt": "0001-01-01T00:00:00Z",
-				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"ID": 17,
+				"CreatedAt": "2023-03-13T15:01:50.440568262+05:30",
+				"UpdatedAt": "2023-03-13T15:01:50.440568262+05:30",
 				"DeletedAt": null,
-				"TweetId": "1634088685384740865",
-				"UserHandle": "@Jefferies"
+				"TweetId": "1635211650524676097",
+				"Hashtags": "#NCLAT's"
 			}
 		],
-		"Timestamp": "2023-03-10T07:07:57Z"
+		"UserHandles": [
+			{
+				"ID": 5,
+				"CreatedAt": "2023-03-13T15:01:50.440868561+05:30",
+				"UpdatedAt": "2023-03-13T15:01:50.440868561+05:30",
+				"DeletedAt": null,
+				"TweetId": "1635211650524676097",
+				"UserHandle": "@VarunGakhar1"
+			}
+		]
 	},
 	{
-		"ID": 0,
-		"CreatedAt": "0001-01-01T00:00:00Z",
-		"UpdatedAt": "0001-01-01T00:00:00Z",
-		"DeletedAt": null,
-		"TweetId": "1634086959680290817",
-		"ChannelName": "@ndtvfeed",
-		"TweetContent": "Conductor, Sleeping, Killed As Government Bus Catches Fire In Bengaluru https://ndtv.com/bangalore-news/conductor-sleeping-killed-as-government-bus-catches-fire-in-bengaluru-3848707…",
+		"TweetId": "1635211858889023492",
+		"ChannelName": "NDTV News feed",
+		"TweetContent": "Mayawati's Party Leader Pulls Up Cops Over Reward For Jailed UP Don's Wife https://ndtv.com/india-news/mayawatis-party-leader-pulls-up-cops-over-reward-for-jailed-up-dons-wife-3856556…",
+		"Timestamp": "2023-03-13T09:31:02Z",
 		"Media": [
 			{
-				"ID": 0,
-				"CreatedAt": "0001-01-01T00:00:00Z",
-				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"ID": 33,
+				"CreatedAt": "2023-03-13T15:01:50.440016426+05:30",
+				"UpdatedAt": "2023-03-13T15:01:50.440016426+05:30",
 				"DeletedAt": null,
-				"TweetId": "",
+				"TweetId": "1635211858889023492",
 				"Type": "link",
-				"URL": "https://ndtv.com/bangalore-news/conductor-sleeping-killed-as-government-bus-catches-fire-in-bengaluru-3848707…"
+				"URL": "https://ndtv.com/india-news/mayawatis-party-leader-pulls-up-cops-over-reward-for-jailed-up-dons-wife-3856556…"
 			},
 			{
-				"ID": 0,
-				"CreatedAt": "0001-01-01T00:00:00Z",
-				"UpdatedAt": "0001-01-01T00:00:00Z",
+				"ID": 34,
+				"CreatedAt": "2023-03-13T15:01:50.440016426+05:30",
+				"UpdatedAt": "2023-03-13T15:01:50.440016426+05:30",
 				"DeletedAt": null,
-				"TweetId": "",
+				"TweetId": "1635211858889023492",
 				"Type": "image",
-				"URL": "https://pbs.twimg.com/media/Fq1xbjUX0AAAb_r?format=jpg\u0026name=small"
+				"URL": "https://pbs.twimg.com/media/FrFwhTAXgAEtqtT?format=jpg\u0026name=small"
 			}
 		],
 		"HashTags": null,
-		"UserHandle": null,
-		"Timestamp": "2023-03-10T07:01:05Z"
-	},
-	{
-		"ID": 0,
-		"CreatedAt": "0001-01-01T00:00:00Z",
-		"UpdatedAt": "0001-01-01T00:00:00Z",
-		"DeletedAt": null,
-		"TweetId": "1634086954156302336",
-		"ChannelName": "@ndtvfeed",
-		"TweetContent": "Family Of Pakistani Journalist Says He Is Missing, Police Deny Claim https://ndtv.com/world-news/family-of-pakistani-journalist-says-he-is-missing-police-deny-claim-3848822…",
-		"Media": [
-			{
-				"ID": 0,
-				"CreatedAt": "0001-01-01T00:00:00Z",
-				"UpdatedAt": "0001-01-01T00:00:00Z",
-				"DeletedAt": null,
-				"TweetId": "",
-				"Type": "link",
-				"URL": "https://ndtv.com/world-news/family-of-pakistani-journalist-says-he-is-missing-police-deny-claim-3848822…"
-			},
-			{
-				"ID": 0,
-				"CreatedAt": "0001-01-01T00:00:00Z",
-				"UpdatedAt": "0001-01-01T00:00:00Z",
-				"DeletedAt": null,
-				"TweetId": "",
-				"Type": "image",
-				"URL": "https://pbs.twimg.com/media/Fq1xbQnXgAABMcn?format=jpg\u0026name=small"
-			}
-		],
-		"HashTags": null,
-		"UserHandle": null,
-		"Timestamp": "2023-03-10T07:01:04Z"
-	},
-	{
-		"ID": 0,
-		"CreatedAt": "0001-01-01T00:00:00Z",
-		"UpdatedAt": "0001-01-01T00:00:00Z",
-		"DeletedAt": null,
-		"TweetId": "1634086943926394881",
-		"ChannelName": "@ndtvfeed",
-		"TweetContent": "Video: Chennai-Based Food Startup Launches India's 1st Unmanned Takeaway https://ndtv.com/offbeat/video-chennai-based-food-startup-launches-indias-1st-unmanned-takeaway-3848838…",
-		"Media": [
-			{
-				"ID": 0,
-				"CreatedAt": "0001-01-01T00:00:00Z",
-				"UpdatedAt": "0001-01-01T00:00:00Z",
-				"DeletedAt": null,
-				"TweetId": "",
-				"Type": "link",
-				"URL": "https://ndtv.com/offbeat/video-chennai-based-food-startup-launches-indias-1st-unmanned-takeaway-3848838…"
-			},
-			{
-				"ID": 0,
-				"CreatedAt": "0001-01-01T00:00:00Z",
-				"UpdatedAt": "0001-01-01T00:00:00Z",
-				"DeletedAt": null,
-				"TweetId": "",
-				"Type": "image",
-				"URL": "https://pbs.twimg.com/media/Fq1xaqOWwAEaKZM?format=jpg\u0026name=small"
-			}
-		],
-		"HashTags": null,
-		"UserHandle": null,
-		"Timestamp": "2023-03-10T07:01:01Z"
-	},
-	{
-		"ID": 0,
-		"CreatedAt": "0001-01-01T00:00:00Z",
-		"UpdatedAt": "0001-01-01T00:00:00Z",
-		"DeletedAt": null,
-		"TweetId": "1634086685226192897",
-		"ChannelName": "@bqprime",
-		"TweetContent": "Shortly on BQ Prime!\n\nA deep dive into every sector of corporate India and conversations with newsmakers to understand the key edge for investing. \n\nCatch all that and more on BQ Prime's new show 'Insight' with \n@_nirajshah\n.",
-		"Media": [
-			{
-				"ID": 0,
-				"CreatedAt": "0001-01-01T00:00:00Z",
-				"UpdatedAt": "0001-01-01T00:00:00Z",
-				"DeletedAt": null,
-				"TweetId": "",
-				"Type": "image",
-				"URL": "https://pbs.twimg.com/media/Fqs_RsqaUAQzGCo.jpg"
-			},
-			{
-				"ID": 0,
-				"CreatedAt": "0001-01-01T00:00:00Z",
-				"UpdatedAt": "0001-01-01T00:00:00Z",
-				"DeletedAt": null,
-				"TweetId": "",
-				"Type": "video",
-				"URL": "blob:https://twitter.com/a5a6723e-a769-4847-81ab-5b03a4ac3149"
-			}
-		],
-		"HashTags": null,
-		"UserHandle": [
-			{
-				"ID": 0,
-				"CreatedAt": "0001-01-01T00:00:00Z",
-				"UpdatedAt": "0001-01-01T00:00:00Z",
-				"DeletedAt": null,
-				"TweetId": "1634086685226192897",
-				"UserHandle": "@_nirajshah"
-			}
-		],
-		"Timestamp": "2023-03-10T07:00:00Z"
-	},
-	{
-		"ID": 0,
-		"CreatedAt": "0001-01-01T00:00:00Z",
-		"UpdatedAt": "0001-01-01T00:00:00Z",
-		"DeletedAt": null,
-		"TweetId": "1634091854411997184",
-		"ChannelName": "@ndtv",
-		"TweetContent": "#NDTVBeeps | On Camera: Massive Bull Charges, Rams 4-Year-Old In UP",
-		"Media": [
-			{
-				"ID": 0,
-				"CreatedAt": "0001-01-01T00:00:00Z",
-				"UpdatedAt": "0001-01-01T00:00:00Z",
-				"DeletedAt": null,
-				"TweetId": "",
-				"Type": "image",
-				"URL": "https://pbs.twimg.com/amplify_video_thumb/1634091656650674177/img/leC3jXVvPVLng6rI.jpg"
-			},
-			{
-				"ID": 0,
-				"CreatedAt": "0001-01-01T00:00:00Z",
-				"UpdatedAt": "0001-01-01T00:00:00Z",
-				"DeletedAt": null,
-				"TweetId": "",
-				"Type": "video",
-				"URL": "blob:https://twitter.com/30f81e0b-2c48-4789-80f7-e4844599cea6"
-			}
-		],
-		"HashTags": [
-			{
-				"ID": 0,
-				"CreatedAt": "0001-01-01T00:00:00Z",
-				"UpdatedAt": "0001-01-01T00:00:00Z",
-				"DeletedAt": null,
-				"TweetId": "1634091854411997184",
-				"Hashtags": "#NDTVBeeps"
-			}
-		],
-		"UserHandle": null,
-		"Timestamp": "2023-03-10T07:20:32Z"
+		"UserHandles": null
 	}
 ]
