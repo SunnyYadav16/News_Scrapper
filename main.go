@@ -8,6 +8,7 @@ import (
 	conditions "github.com/serge1peshcoff/selenium-go-conditions"
 	"github.com/tebeka/selenium"
 	"os"
+	"time"
 )
 
 func init() {
@@ -34,8 +35,6 @@ func main() {
 		//jsonResult []byte
 		err    error
 		driver selenium.WebDriver
-		count  = 0
-		length int
 	)
 	defer func() {
 		if r := recover(); r != nil {
@@ -45,6 +44,7 @@ func main() {
 		}
 		utils.CloseDatabase()
 		services.CloseService(driver)
+		main()
 	}()
 
 	//LOGIN TO THE TWITTER
@@ -54,23 +54,10 @@ func main() {
 	err = driver.Wait(conditions.URLContains("https://twitter.com"))
 	services.CheckError("Error Loading Twitter Page", err)
 
-	//SCRAPPING NEWS HANDLE
-	scrappedNews := services.NewsScrapper(driver, "timesofindia")
-
-	//TOTAL LENGTH OF SCRAPPED DATA
-	length = len(scrappedNews)
-
-	//DATA INSERTION
-	for _, news := range scrappedNews {
-		count = services.InsertScrappedData(&news, count)
-	}
-
-	//COUNT OF NEW DATA INSERTED IN DATABASE
-	total := length - count
-	if total == 0 { //IF NO RECORDS WERE INSERTED IN DATABASE
-		fmt.Println("Records Up-To-Date.")
-	} else { //ELSE NUMBER OF RECORDS INSERTED IN DATABASE
-		fmt.Println(total, " Record(s) Inserted.")
+	ticker := time.NewTicker(150 * time.Second)
+	fmt.Println("Running Program!")
+	for range ticker.C {
+		go services.TimesOfIndia(driver)
 	}
 
 	//scrappedNews = []models.NewsHandler{}

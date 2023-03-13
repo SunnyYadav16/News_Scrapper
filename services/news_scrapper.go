@@ -6,7 +6,6 @@ import (
 	"github.com/SunnyYadav16/News_Scrapper/models"
 	conditions "github.com/serge1peshcoff/selenium-go-conditions"
 	"github.com/tebeka/selenium"
-	"os"
 	"strings"
 	"time"
 )
@@ -18,7 +17,6 @@ func NewsScrapper(driver selenium.WebDriver, channelName string) (newsScrapped [
 			fmt.Println("Error: ", r)
 			fmt.Println("Closing Driver and exiting program.")
 			CloseService(driver)
-			os.Exit(0)
 		}
 	}()
 
@@ -89,7 +87,14 @@ func scrapNews(scrappedNews *models.NewsHandler, article selenium.WebElement) {
 		tweetExternalSourceLink string
 		tweetVideo              selenium.WebElement
 		tweetVideoLink          string
+		tweetChannel            selenium.WebElement
 	)
+
+	tweetChannel, err = article.FindElement(selenium.ByXPATH, "//div[1]/div/a/div/div[1]/span/span")
+	CheckError("Tweet Channel Name Not Found", err)
+
+	scrappedNews.ChannelName, err = tweetChannel.Text()
+	CheckError("Error Finding Channel Name", err)
 
 	//FINDING  A ELEMENT FOR TWEET ID
 	tweetIdElement, err = article.FindElement(selenium.ByCSSSelector, "a.css-4rbku5.css-18t94o4.css-901oao.r-14j79pv.r-1loqt21.r-xoduu5.r-1q142lx.r-1w6e6rj.r-37j5jr.r-a023e6.r-16dba41.r-9aw3ui.r-rjixqe.r-bcqeeo.r-3s2u2q.r-qvutc0")
