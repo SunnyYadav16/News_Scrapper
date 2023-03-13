@@ -107,10 +107,10 @@ func insertScrappedData(news *models.NewsHandler, count int) int {
 			check, err = userHandle.Insert()
 			if check { //IF DATA NOT EXISTS IN DATABASE
 				utils.PanicError("Error Inserting Data in User Handle", err)
-			}
-			check, err = insertNewsHandleUserHandle(userHandle.ID, news.ID)
-			if check { //IF DATA NOT EXISTS IN DATABASE
-				utils.PanicError("Error Inserting In UserHandle And NewsHandler Join Table", err)
+				check, err = insertNewsHandleUserHandle(userHandle.ID, news.ID)
+				if check { //IF DATA NOT EXISTS IN DATABASE
+					utils.PanicError("Error Inserting In UserHandle And NewsHandler Join Table", err)
+				}
 			}
 		}
 
@@ -136,10 +136,9 @@ func insertScrappedData(news *models.NewsHandler, count int) int {
 // INSERTING DATA IN NEWS-HANDLE AND USER-HANDLE JOIN TABLE
 func insertNewsHandleUserHandle(userHandleID, newsID uint) (bool, error) {
 	db := utils.NewDatabase()
-
 	//CHECK IF DATA ALREADY EXISTS
 	row := db.Table("newshandel_userhandle").Where("user_handle_id = ? AND news_handler_id = ?", userHandleID, newsID)
-	if row.RowsAffected < 0 { //IF DATA NOT EXISTS
+	if row.RowsAffected < 1 { //IF DATA NOT EXISTS
 		return true, db.Exec("INSERT INTO  newshandel_userhandle (user_handle_id,news_handler_id) VALUES (?,?)", userHandleID, newsID).Error
 	}
 	return false, nil
@@ -148,10 +147,9 @@ func insertNewsHandleUserHandle(userHandleID, newsID uint) (bool, error) {
 // INSERTING DATA IN NEWS-HANDLE AND HASH-TAG JOIN TABLE
 func insertNewsHandleHashTag(hashTagID, newsID uint) (bool, error) {
 	db := utils.NewDatabase()
-
 	//CHECK IF DATA ALREADY EXISTS
 	row := db.Table("newshandel_hashtags").Where("hash_tag_id = ? AND news_handler_id = ?", hashTagID, newsID)
-	if row.RowsAffected < 0 { //IF DATA NOT EXISTS
+	if row.RowsAffected < 1 { //IF DATA NOT EXISTS
 		return true, db.Exec("INSERT INTO  newshandel_hashtags (hash_tag_id,news_handler_id) VALUES (?,?)", hashTagID, newsID).Error
 	}
 	return false, nil
