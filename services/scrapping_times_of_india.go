@@ -7,6 +7,12 @@ import (
 )
 
 func TimesOfIndia(driver selenium.WebDriver) {
+	defer func() {
+		if r := recover(); r != nil {
+			fmt.Println("Error: ", r)
+			panic("Re-Starting the Execution")
+		}
+	}()
 	var (
 		count  = 0
 		length int

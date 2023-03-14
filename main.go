@@ -37,6 +37,7 @@ func main() {
 		}
 		utils.CloseDatabase()
 		services.CloseService(driver)
+		fmt.Printf("\n\n-------------------\n\n")
 		main()
 	}()
 
