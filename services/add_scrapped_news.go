@@ -6,7 +6,7 @@ import (
 	"github.com/SunnyYadav16/News_Scrapper/utils"
 )
 
-// INSERTING SCRAPPED DATA
+// InsertScrappedData : INSERTING SCRAPPED DATA
 func InsertScrappedData(news *models.NewsHandler, count int) int {
 	defer func() {
 		if r := recover(); r != nil {

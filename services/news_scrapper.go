@@ -77,9 +77,9 @@ func scrapNews(scrappedNews *models.NewsHandler, article selenium.WebElement) {
 		tweetDateTime           string
 		dateTimeLayout          = "2006-01-02T15:04:05.000Z"
 		tweetContentDiv         selenium.WebElement
+		tweetContent            string
 		tweetContentSpans       []selenium.WebElement
 		spanText                string
-		tweetContent            string
 		length                  int
 		tweetImages             []selenium.WebElement
 		tweetImageLink          string
@@ -121,23 +121,35 @@ func scrapNews(scrappedNews *models.NewsHandler, article selenium.WebElement) {
 	scrappedNews.Timestamp, err = time.Parse(dateTimeLayout, tweetDateTime)
 	CheckError("Cannot Convert Into Date Time Format", err)
 
-	//FINDING TWEET CONTENT'S PARENT ELEMENT
+	//FINDING TWEET CONTENT'S ELEMENT
 	tweetContentDiv, err = article.FindElement(selenium.ByCSSSelector, "div[data-testid=tweetText]")
 	CheckError("Tweet Contents Div Element Not Found", err)
 
-	//FINDING TWEET CONTENT'S ELEMENT
-	tweetContentSpans, err = tweetContentDiv.FindElements(selenium.ByCSSSelector, "span.css-901oao.css-16my406.r-poiln3.r-bcqeeo.r-qvutc0")
-	CheckError("Tweet Contents Span Element Not Found", err)
+	//FETCHING TWEET CONTENT
+	tweetContent, err = tweetContentDiv.Text()
+	CheckError("Tweet Content Not Found", err)
 
-	//TOTAL LENGTH OF SPAN ELEMENT FETCHED FOR TWEET CONTENT
-	length = len(tweetContentSpans)
-	for i := 0; i < length; i++ {
+	//IF NO CONTENT INSIDE DIV TAG
+	if len(strings.TrimSpace(tweetContent)) == 0 {
 
-		//FETCHING TWEET CONTENT
-		spanText, err = tweetContentSpans[i].Text()
-		CheckError("Error Finding Text in Span Element", err)
-		tweetContent += spanText
+		//FINDING SPAN ELEMENT FOR TWEET CONTENT
+		tweetContentSpans, err = tweetContentDiv.FindElements(selenium.ByCSSSelector, ".css-901oao.css-16my406.r-poiln3.r-bcqeeo.r-qvutc0")
+		CheckError("Tweet Content's Span Element Not Found", err)
+		length = len(tweetContentSpans)
+		for i := 0; i < length; i++ {
+
+			//FETCHING TWEET CONTENT
+			spanText, err = tweetContentSpans[i].Text()
+			CheckError("Tweet Content Not Found Inside Span Element", err)
+			tweetContent += spanText
+		}
 	}
+
+	if len(strings.TrimSpace(tweetContent)) == 0 {
+		err = errors.New("tweet content empty")
+		CheckError("Empty Tweet Content", err)
+	}
+
 	scrappedNews.TweetContent = tweetContent
 
 	//EXTRACTING MENTIONS USER-HANDLES AND LINKS FROM TWEET CONTENT
@@ -204,7 +216,7 @@ func tagsHandlesAndLinksFinder(tweetContent string, scrappedNews *models.NewsHan
 
 	//SPLITTING WORDS
 	finalFunc := func(characters rune) bool {
-		return characters == ')' || characters == ',' || characters == '.' || characters == '!' || characters == '?' || characters == ':' || characters == ';' || characters == '`' || characters == '"' || characters == rune('\'') || characters == '-' || characters == ']' || characters == '}' || characters == '*' || characters == '|'
+		return characters == ')' || characters == ',' || characters == '.' || characters == '!' || characters == '?' || characters == ':' || characters == ';' || characters == '`' || characters == '"' || characters == '\'' || characters == '-' || characters == ']' || characters == '}' || characters == '*' || characters == '|'
 	}
 
 	words := strings.FieldsFunc(tweetContent, splitter)
