@@ -9,9 +9,9 @@ type NewsHandler struct {
 	ChannelName  string
 	TweetContent string
 	Timestamp    time.Time
-	HashTags     []Hashtags    `gorm:"foreignKey:TweetId"`
-	UserHandle   []UserHandles `gorm:"foreignKey:TweetId"`
-	Media        []Media       `gorm:"foreignKey:TweetId"`
+	Hashtags     string
+	UserHandles  string
+	MediaLinks   string
 }
 type Media struct {
 	TweetId string
